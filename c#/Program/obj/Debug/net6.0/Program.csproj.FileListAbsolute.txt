@@ -26,3 +26,18 @@ C:\Users\Administrator\Desktop\C-Program\c#\Program\obj\Debug\net6.0\refint\Prog
 C:\Users\Administrator\Desktop\C-Program\c#\Program\obj\Debug\net6.0\Program.pdb
 C:\Users\Administrator\Desktop\C-Program\c#\Program\obj\Debug\net6.0\Program.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\C-Program\c#\Program\obj\Debug\net6.0\ref\Program.dll
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\bin\Debug\net6.0\Program.exe
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\bin\Debug\net6.0\Program.deps.json
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\bin\Debug\net6.0\Program.runtimeconfig.json
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\bin\Debug\net6.0\Program.dll
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\bin\Debug\net6.0\Program.pdb
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.csproj.AssemblyReference.cache
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.AssemblyInfoInputs.cache
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.AssemblyInfo.cs
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.csproj.CoreCompileInputs.cache
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.dll
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\refint\Program.dll
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.pdb
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\Program.genruntimeconfig.cache
+C:\Users\User A\Desktop\App1\C-Program\c#\Program\obj\Debug\net6.0\ref\Program.dll
