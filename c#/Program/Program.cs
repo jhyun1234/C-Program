@@ -3,93 +3,59 @@ using System.Threading.Channels;
 
 namespace Program
 {
-    public interface IItem
-    {
-        void Use();
-    }
-    public interface IWaitTime
-    {
-        void Wait(float timer);
-    }
-    
-    public class Player
-    {
-        public void OnTriggerEnter(IItem item)
-        {
-            item.Use();
-        }
-    }
-    public class GameObject
-    {
-        private int guID;
-
-        public int GUID 
-
-        {
-            set { guID = value; }
-
-
-            get { return guID; }
-        }
-
-        public GameObject Clone()
-        {
-            // 1. class 생성
-            GameObject clone = new GameObject();
-            // 2. class 안에 있는 데이터를 넣어준다.
-            clone.guID = guID;
-            // 3. class 반환
-            return  clone;
-        }
-
-
-    }
-
+    public delegate void Calculator(int x, int y);
     internal class Program
     {
+
+        static void Add(int x, int y)
+        {
+            Console.WriteLine("x + y : "+ (x + y) );
+
+
+        }
+
+        static void Substract(int x, int y)
+        {
+            Console.WriteLine("x - y : "+ (x - y));
+        }
+
+        static void Multiply(int x, int y)
+        {
+            Console.WriteLine("x * y :"+ (x * y));
+        }
+
+        static void Divide(int x , int y)
+        {
+            Console.WriteLine("x / y :" +(x / y));
+        }
         static void Main(string[] args)
         {
-            #region 얕은 복사
-            //GameObject gameObject1 = new GameObject();
+            #region 델리케이트
+            Calculator calculator;
+            //calculator = Add;
+            //calculator(10, 20);
 
-            //GameObject gameObject2 = gameObject1;
-
-            //gameObject2.GUID = 99;
-            //Console.WriteLine("gameObject1의 GUID :"+ gameObject1.GUID);
-            //Console.WriteLine("gameObject2의 GUID :"+ gameObject2.GUID);
+            //calculator = Substract;
+            //calculator(10, 20);
             #endregion
 
-            #region 깊은 복사
-            //GameObject clone1 = new GameObject();
+            #region 델리게이트 체인
+            //calculator = Add;
+            //calculator += Substract;
+            //calculator += Multiply;
+            //calculator += Divide;
 
-            //GameObject clone2 = clone1.Clone();
+            //calculator -= Divide;
+            //calculator(5, 6);
 
-            //clone1.GUID = 456;
-            //clone2.GUID = 111;
-            //Console.WriteLine("clone1.GUID:"+ clone1.GUID);
-            //Console.WriteLine("clone2.GUID:" + clone2.GUID);
-
-            #endregion
-
-            #region 인터페이스
-
-            //Player player = new Player();
-
-            //// 인터페이스 참조 변수를 선언할 수 있지만,
-            //// 인스턴스를 생성할 수 없다.
-            //// IItem items = new IItem();
-            //player.OnTriggerEnter(new Magnet());
-            //player.OnTriggerEnter(new Missile());
-            //player.OnTriggerEnter(new Shield());
 
             #endregion
 
-            #region 추상 클래스
+            #region base 키워드
 
-            Juggling juggling = new Juggling();
+            wizard wizard = new wizard();
 
-            juggling.Information();
-            juggling.Skill();
+            
 
             #endregion
         }
