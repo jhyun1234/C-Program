@@ -3,59 +3,33 @@ using System.Threading.Channels;
 
 namespace Program
 {
-    public delegate void Calculator(int x, int y);
+   
     internal class Program
     {
-
-        static void Add(int x, int y)
-        {
-            Console.WriteLine("x + y : "+ (x + y) );
-
-
-        }
-
-        static void Substract(int x, int y)
-        {
-            Console.WriteLine("x - y : "+ (x - y));
-        }
-
-        static void Multiply(int x, int y)
-        {
-            Console.WriteLine("x * y :"+ (x * y));
-        }
-
-        static void Divide(int x , int y)
-        {
-            Console.WriteLine("x / y :" +(x / y));
-        }
+   
         static void Main(string[] args)
         {
-            #region 델리케이트
-            Calculator calculator;
-            //calculator = Add;
-            //calculator(10, 20);
+            #region SRP 5대 원칙
 
-            //calculator = Substract;
-            //calculator(10, 20);
+
+            //Monster spider = new Monster("거미 ", 10, 100);
+
+            //spider.Patrol();
+
+            //Infromation infromation = new Infromation();
+
+            //infromation.MonsterInfo(spider);
             #endregion
 
-            #region 델리게이트 체인
-            //calculator = Add;
-            //calculator += Substract;
-            //calculator += Multiply;
-            //calculator += Divide;
+            #region OCP 5대 원칙
 
-            //calculator -= Divide;
-            //calculator(5, 6);
-
-
-            #endregion
-
-            #region base 키워드
-
-            wizard wizard = new wizard();
-
-            
+            Marine marine = new Marine();
+            Firebet firebet = new Firebet();
+            Ghost ghost = new Ghost();
+            UnitMangaer unitMangaer = new UnitMangaer();
+            unitMangaer.Commend(marine);
+            unitMangaer.Commend(firebet);
+            unitMangaer.Commend(ghost);
 
             #endregion
         }
