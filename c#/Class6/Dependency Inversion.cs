@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Class6
 {
 
 	#region 의존관계 역전 원칙

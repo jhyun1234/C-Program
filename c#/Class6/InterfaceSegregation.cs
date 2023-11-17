@@ -5,7 +5,7 @@ using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Program
+namespace Class6
 {
     #region 인터페이스 분리 원칙
     // 클라이언트가 자신이 사용하지 않는 함수에 의존하지 않아야 하며,

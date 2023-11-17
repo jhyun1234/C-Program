@@ -1,12 +1,8 @@
-﻿using System.Runtime.InteropServices;
-using System.Threading.Channels;
-
-namespace Program
+﻿namespace Class7
 {
-   
     internal class Program
     {
-   
+
         static void Main(string[] args)
         {
             #region 일반화 프로그래밍
