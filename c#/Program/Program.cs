@@ -6,6 +6,7 @@ using System.Xml.Linq;
 
 namespace Program
 {
+    
     internal class Program
     {
         
@@ -42,9 +43,30 @@ namespace Program
             #endregion
 
             #region 인접 행렬
+            /*
+            AdjancencyMatrix<char> adjancency = new AdjancencyMatrix<char>(4);
 
-            // 
             
+
+            adjancency.InsertVertex('A');
+            adjancency.InsertVertex('B');
+            adjancency.InsertVertex('C');
+            adjancency.InsertVertex('D');
+
+            adjancency.InsertEdge(0, 1);
+            adjancency.InsertEdge(0, 2);
+            adjancency.InsertEdge(0, 3);
+            adjancency.InsertEdge(1, 2);
+            adjancency.InsertEdge(2, 3);
+
+            adjancency.Display();
+            */
+            #endregion
+
+            #region 인접 리스트
+
+
+
             #endregion
         }
     }
