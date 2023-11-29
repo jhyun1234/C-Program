@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 
-namespace Program
+namespace Class14
 {
     internal class AdjancencyMatrix<T>
     {
