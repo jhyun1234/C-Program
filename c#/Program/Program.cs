@@ -43,6 +43,8 @@ namespace Program
             #endregion
 
             #region 인접 행렬
+            // 그래프에서 어느 노드들이 간선으로 연결되어 있는지를 나타내는 행렬이며,
+            // 2차열 배열로 구현되어 있고 노드 사이에 간선이 있다면 1, 없다면 0으로 표현한다.
             /*
             AdjancencyMatrix<char> adjancency = new AdjancencyMatrix<char>(4);
 
@@ -64,10 +66,24 @@ namespace Program
             #endregion
 
             #region 인접 리스트
+            /*
+            // 각 노드에 연결된 노드들을 원소로 갖는 리스트들의 배열을 의미하며,
+            // 인접 리스트가 있다면 [i]는 i 번째 노드에 연결된 노드들을 원소로
+            // 가지는 리스트이다.
 
+            AdjacencyList adjacencyList = new AdjacencyList(6);
 
+            adjacencyList.InsertEdge(0, 1);
+            adjacencyList.InsertEdge(0, 2);
+            adjacencyList.InsertEdge(1, 3);
+            adjacencyList.InsertEdge(1, 4);
+            adjacencyList.InsertEdge(2, 5);
+            adjacencyList.InsertEdge(2, 6);
 
+            adjacencyList.Display();
+            */
             #endregion
+
         }
     }
 }
