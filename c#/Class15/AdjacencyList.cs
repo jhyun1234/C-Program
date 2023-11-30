@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Class14
+namespace Class15
 {
     internal class AdjacencyList
     {
@@ -16,7 +17,8 @@ namespace Class14
 
         public AdjacencyList(int vertexSize)
         {
-            size = vertexSize;
+            
+           size = vertexSize;
             adjacencyList = new List<int>[vertexSize];
 
             for (int i = 0; i < vertexSize; i++)
@@ -106,6 +108,25 @@ namespace Class14
                 }
 
 
+            }
+        }
+
+        public void DFS(int root)
+        {
+            bool[] visited = new bool[size];
+            // 현재 노드를 방문한 것으로 표시한다.
+            visited[root] = true;
+
+            // 현재 노드를 출력한다.
+            Console.Write(root+ " ");
+
+            // 현재 노드와 연결된 방문하지 않은 노드를 재귀적으로 탐색한다.
+            foreach (int index in adjacencyList[root])
+            {
+                if (visited[index]==false)
+                {
+                    DFS(index);
+                }
             }
         }
         public void Visited(int vertex)
